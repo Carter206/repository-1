@@ -3,32 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Homepage</title>
+    <title>VanJoy PNW</title>
+    <!-- Rugged Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
-        header { margin-bottom: 30px; }
-        h1 { color: #333; }
-        nav a { margin: 0 10px; color: #007acc; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        main { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px #eee; }
-        footer { margin-top: 40px; color: #888; font-size: 0.9em; }
+        body {
+            font-family: 'Oswald', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom, #263d2c 0%, #3a5d3c 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: #1b2e1b;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+            position: relative;
+            border-bottom: 4px solid #4e7c4e;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            letter-spacing: 2px;
+            margin: 0;
+            color: #e0f7fa;
+            text-shadow: 2px 2px 10px #1b2e1b, 0 2px 0 #4e7c4e;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #b2dfdb;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .tree-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-top: 10px;
+            gap: 10px;
+        }
+        .tree {
+            width: 30px;
+            height: 60px;
+            position: relative;
+        }
+        .tree .trunk {
+            width: 8px;
+            height: 18px;
+            background: #5d4037;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        .tree .leaves {
+            width: 30px;
+            height: 36px;
+            background: #234d20;
+            border-radius: 50% 50% 40% 40%/60% 60% 40% 40%;
+            position: absolute;
+            left: 0;
+            bottom: 12px;
+            box-shadow: 0 0 8px #1b2e1b inset;
+        }
+        main {
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px #234d20;
+            max-width: 650px;
+            margin: 40px auto 0 auto;
+            position: relative;
+        }
+        .van {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0 10px 0;
+        }
+        .van-svg {
+            width: 200px;
+            height: 90px;
+        }
+        h2 {
+            color: #234d20;
+            margin-top: 0;
+            font-family: 'Oswald', Arial, sans-serif;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 0 #b2dfdb;
+        }
+        p {
+            color: #263d2c;
+            font-size: 1.1em;
+            font-family: 'Oswald', Arial, sans-serif;
+        }
+        footer {
+            margin-top: 50px;
+            color: #b2dfdb;
+            font-size: 1em;
+            text-align: center;
+            padding-bottom: 20px;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Homepage</h1>
+        <h1>VanJoy PNW</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="our-vans.html">Our Vans</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="tree-row">
+            <div class="tree">
+                <div class="leaves"></div>
+                <div class="trunk"></div>
+            </div>
+            <div class="tree">
+                <div class="leaves"></div>
+                <div class="trunk"></div>
+            </div>
+            <div class="tree">
+                <div class="leaves"></div>
+                <div class="trunk"></div>
+            </div>
+            <div class="tree">
+                <div class="leaves"></div>
+                <div class="trunk"></div>
+            </div>
+            <div class="tree">
+                <div class="leaves"></div>
+                <div class="trunk"></div>
+            </div>
+        </div>
     </header>
     <main>
-        <h2>Hello!</h2>
-        <p>This is a basic HTML homepage. You can customize this template to fit your needs.</p>
+        <div style="display: flex; justify-content: center; gap: 24px; margin: 30px 0 10px 0;">
+            <div style="width: 180px; height: 120px; background: #e0f7fa; border: 3px solid #4e7c4e; border-radius: 10px; box-shadow: 0 2px 12px #234d20; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <span style="color: #4e7c4e; font-family: 'Oswald', Arial, sans-serif; font-size: 1.1em;"></span>
+            </div>
+            <div style="width: 180px; height: 120px; background: #e0f7fa; border: 3px solid #4e7c4e; border-radius: 10px; box-shadow: 0 2px 12px #234d20; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <span style="color: #4e7c4e; font-family: 'Oswald', Arial, sans-serif; font-size: 1.1em;"></span>
+            </div>
+            <div style="width: 180px; height: 120px; background: #e0f7fa; border: 3px solid #4e7c4e; border-radius: 10px; box-shadow: 0 2px 12px #234d20; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <span style="color: #4e7c4e; font-family: 'Oswald', Arial, sans-serif; font-size: 1.1em;"></span>
+            </div>
+        </div>
+        <h2>Adventure Awaits in the Pacific Northwest</h2>
+        <p>
+            Welcome to <strong>VanJoy</strong> — your go-to for custom adventure vans in the PNW! 
+            Explore the wild, sleep under the stars, and travel in comfort and style. 
+            Our vans are built for the forests, mountains, and coastlines of the Northwest.
+        </p>
+        <p>
+            Ready to start your journey? Check out our fleet or contact us to build your dream van!
+        </p>
     </main>
+
     <footer>
-        &copy; 2025 Your Name
+        &copy; 2025 VanJoy PNW &mdash; Crafted for Adventure
     </footer>
-</body>
-</html>
